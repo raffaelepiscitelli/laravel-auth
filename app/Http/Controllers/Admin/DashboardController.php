@@ -10,7 +10,6 @@ use Illuminate\Support\Facades\Hash;
 class DashboardController extends Controller
 {
     public function index(){
-        dd(Auth::user()->password);
-        return 'Welcome back!';
+        return view('admin.dashboard');
     }
 }
